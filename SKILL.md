@@ -1,7 +1,79 @@
+---
+name: animejs-skill
+description: "Trigger: animejs animation, anime.js, stagger, timeline, scroll animation. Anime.js reference for animations, timelines, stagger, scroll sync, SVG, and text effects."
+license: MIT
+metadata:
+  author: juliangarnier
+  version: "0.0.1"
+---
+
 # Anime.js — Skill Reference
 
 > Lightweight, modular, high-performance JavaScript animation engine.
-> Current version: **4.0.1** | Official docs: https://animejs.com/documentation
+> Current version: **4.0.0** | Official docs: https://animejs.com/documentation
+
+---
+
+## Activation Contract
+
+Use this skill when:
+- Building web animations (CSS properties, transforms, colors) in vanilla JS or any framework
+- Creating animation sequences with timelines
+- Implementing scroll-triggered animations
+- Animating SVG elements (morphing, drawing, motion paths)
+- Text animations (split, scramble effects)
+- Interactive animations (draggable, animatable)
+
+Works with: Vanilla JS, React, Vue, Svelte, Next.js, Nuxt, or any DOM-based project.
+
+Do NOT use this skill for:
+- Complex physics simulations (use Matter.js or similar)
+- Canvas/WebGL animations (use Three.js or Pixi.js)
+- Video/audio sync (use native Web APIs)
+
+---
+
+## Decision Gates
+
+| Need | Use |
+|------|-----|
+| Simple one-shot animation | `animate()` — Section 1 |
+| Orchestrate multiple animations | `createTimeline()` — Section 3 |
+| Real-time updates (mouse, scroll) | `createAnimatable()` — Section 4 |
+| Drag-and-drop with physics | `createDraggable()` — Section 5 |
+| Layout changes (FLIP technique) | `createLayout()` — Section 6 |
+| Responsive animations | `createScope()` — Section 7 |
+| Scroll-triggered animations | `onScroll()` — Section 8 |
+| SVG morphing | `morphTo` — Section 9 |
+| SVG line drawing | `createDrawable` — Section 9 |
+| SVG path following | `createMotionPath` — Section 9 |
+| Text character/word animation | `splitText()` — Section 10 |
+| Text scramble effect | `scrambleText()` — Section 10 |
+| Staggered animations | `stagger()` — Section 11 |
+| Physics springs | `createSpring()` — Section 12 |
+| High-performance transforms | `waapi` — Section 14 |
+| Global engine configuration | `engine` — Section 15 |
+
+---
+
+## Hard Rules
+
+1. **Import only what you need** — Use modular imports to keep bundle size small (~24KB total)
+2. **Use transforms over positioning** — Transform properties (x, y, scale, rotate) are GPU-accelerated
+3. **Prefer timelines over nested callbacks** — `createTimeline()` is more readable than callback chains
+4. **Use WAAPI for transforms/opacity only** — Use JS engine for colors, scroll sync, and callbacks
+5. **Clean up after yourself** — Call `revert()` or `cancel()` on animations when components unmount
+6. **Avoid animating layout properties** — Animate `transform` and `opacity`, not `width`/`height` directly
+
+---
+
+## Output Contract
+
+When this skill is invoked, return:
+- Relevant code snippets for the requested animation pattern
+- Module imports needed for the feature
+- Performance considerations if applicable
+- Cleanup recommendations
 
 ---
 
@@ -1173,9 +1245,15 @@ animate('.el', {
 });
 ```
 
+## See also
+
+- **react-19** — React animations with Anime.js
+- **frontend-design** — UI animations and micro-interactions
+- **javascript** — Using Anime.js with vanilla JavaScript
+
 ---
 
-## Resources
+## References
 
 | Resource | URL |
 |---|---|
@@ -1184,3 +1262,13 @@ animate('.el', {
 | CodePen examples | https://codepen.io/collection/Poerqa |
 | GitHub | https://github.com/juliangarnier/anime |
 | npm | https://www.npmjs.com/package/animejs |
+
+---
+
+## See also
+
+- **react-19** — React components with Anime.js (useEffect cleanup, refs)
+- **frontend-design** — UI animations and micro-interactions
+- **javascript** — Using Anime.js with vanilla JavaScript
+
+---
