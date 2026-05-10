@@ -1264,11 +1264,3 @@ animate('.el', {
 | npm | https://www.npmjs.com/package/animejs |
 
 ---
-
-## See also
-
-- **react-19** — React components with Anime.js (useEffect cleanup, refs)
-- **frontend-design** — UI animations and micro-interactions
-- **javascript** — Using Anime.js with vanilla JavaScript
-
----
