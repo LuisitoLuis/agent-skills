@@ -38,6 +38,7 @@ Do NOT use this skill for:
 | Need | Use |
 |------|-----|
 | Simple one-shot animation | `animate()` — Section 1 |
+| Timers and time control | `createTimer()` — Section 2 |
 | Orchestrate multiple animations | `createTimeline()` — Section 3 |
 | Real-time updates (mouse, scroll) | `createAnimatable()` — Section 4 |
 | Drag-and-drop with physics | `createDraggable()` — Section 5 |
