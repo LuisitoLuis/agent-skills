@@ -1,5 +1,5 @@
 ---
-name: animejs-skill
+name: animejs
 description: "Trigger: animejs animation, anime.js, stagger, timeline, scroll animation. Anime.js reference for animations, timelines, stagger, scroll sync, SVG, and text effects."
 license: MIT
 metadata:
