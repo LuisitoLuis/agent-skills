@@ -1,9 +1,0 @@
-{
-  "name": "agent-skills",
-  "version": "0.0.1",
-  "description": "A curated collection of specialized skills for AI coding assistants. Each skill provides domain-specific instructions, patterns, and best practices to enhance the assistant's ability to handle particular technologies and workflows.",
-  "skills": [
-    "skills/animejs",
-    "skills/theme-toggle-effect"
-  ]
-}
