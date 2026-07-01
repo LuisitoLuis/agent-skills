@@ -1,5 +1,5 @@
 ---
-name: codrops-hover-styles
+name: hover-styles
 description: >
   Use this skill whenever the user wants to implement, reproduce, adapt, or get inspired by
   button hover animations or link underline hover effects from Codrops' ButtonHoverStyles
